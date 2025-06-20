@@ -1,5 +1,7 @@
+import Header from "../components/header"
+
 const ListManagmentEventsPage: React.FC = () => {
-    return (<></>)
+    return (<><Header/></>)
 }
 
 export default  ListManagmentEventsPage
