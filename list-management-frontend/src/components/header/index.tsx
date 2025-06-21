@@ -1,4 +1,5 @@
 import "./index.scss"
+import SearchBar from "../SearchBar";
 
 const Header = () => {
     return (
@@ -6,6 +7,7 @@ const Header = () => {
          <h1 className="list-title">
             Rooming List Management: Events
         </h1>
+        <SearchBar/>
        </div>
     )
 }
