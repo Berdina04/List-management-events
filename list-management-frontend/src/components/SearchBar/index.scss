@@ -1,11 +1,13 @@
 .SearchBar {
   display: flex;
   align-items: center;
-  width: 280px;
-  height: 48px;
+  min-width: 280px;
+  max-height: 48px;
   margin: 0;
+  padding: 0;
 
-  .button-search {
+  .search-button {
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #e4ecf2;
     border-radius: 12px;
@@ -21,13 +23,15 @@
       font-size: 16px;
       background: transparent;
       padding-left: 8px;
+      font-size: 14px;
+
       &:focus {
         border: none;
         outline: none;
       }
     }
 
-    img {
+    .search-ico {
       width: 40px;
       height: 40px;
     }

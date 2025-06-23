@@ -1,0 +1,64 @@
+.EventList {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  background: #f8fbfc;
+
+  .event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .event-separator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 24px;
+      gap: 20px;
+
+      .event-line {
+        flex-grow: 1;
+        height: 2px;
+        min-width: 0;
+
+        &.left {
+          background: linear-gradient(to left, #00c2a6, #fff);
+        }
+        &.right {
+          background: linear-gradient(to right, #00c2a6, #fff);
+        }
+      }
+
+      .event-name {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 142px;
+        height: 32px;
+        background-color: #e5f9f6;
+        border: 1px solid #00c2a6;
+        border-radius: 4px;
+
+        .event-name-span {
+          font-weight: 700;
+          color: #00c2a6;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .event-rooming-list {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      width: 100%;
+      overflow-x: auto;
+      scrollbar-color: #cdd4e5;
+    }
+  }
+}

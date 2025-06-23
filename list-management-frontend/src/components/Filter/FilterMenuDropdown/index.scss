@@ -1,0 +1,78 @@
+.FilterMenuDropDown {
+  position: absolute;
+  margin-top: 6px;
+  background-color: #ffffff;
+  max-width: 184px;
+  max-height: 174px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 12px;
+  z-index: 10;
+
+  .filter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .filter-menu-title {
+      margin: 0;
+      color: #777e90;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .filter-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .filter-option-container {
+        display: flex;
+        gap: 10px;
+        text-align: center;
+
+        .filter-option-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          background-color: transparent;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #e4ecf2;
+          border-radius: 4px;
+          padding: 0;
+
+          &.checked {
+            background-color: #00c2a6;
+            .filter-checked-box-ico {
+              width: 10px;
+              height: 8px;
+            }
+          }
+        }
+        .filter-option-label {
+          color: #141416;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .filter-save-button {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 160px;
+    height: 32px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #4323ff;
+    border-radius: 4px;
+  }
+}
